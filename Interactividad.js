@@ -1,11 +1,11 @@
 let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item');
+const items = document.querySelectorAll('.carousel');
 
 function showSlide(index) {
     items.forEach((item, i) => {
         item.classList.toggle('active', i === index);
     });
-    document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+    document.querySelector('.carousel').style.transform = `translateX(-${index * 100}%)`;
 }
 
 function nextSlide() {
