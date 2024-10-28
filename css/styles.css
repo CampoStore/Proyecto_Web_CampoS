@@ -20,10 +20,13 @@ body {
 .header-wrapper .top-bar .nav {
   font-size: 0.875rem;
 }
-.header-wrapper .logo-wrapper .logo img {
+.header-wrapper .logo-wrapper .logo img, .footer-wrapper .brand .logo img {
   width: 150px;
   height: auto;
 }
 .header-wrapper .mobile-menu {
   background-color: var(--primary-bg-color);
+}
+.footer-wrapper, .footer-wrapper .brand {
+  background-color: rgba(0,0,0,0.05);
 }
