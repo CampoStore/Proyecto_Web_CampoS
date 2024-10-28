@@ -3,6 +3,7 @@
   --primary-bg-color: #1d2101;
   /*** Text Color Variable ***/
   --primary-text-color: #ffffff;
+  --hover-link-color: #dcdcdc;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -19,9 +20,18 @@ body {
 .header-wrapper .top-bar .nav {
   font-size: 0.875rem;
 }
-.header-wrapper .top-bar .col-md-4:nth-child(2) {
+.header-wrapper .top-bar .nav .nav-link:hover {
+  color: var(--hover-link-color) !important;
+}
+.header-wrapper .top-bar .col-md-6 {
   font-size: 0.75rem;
   letter-spacing: 3px;
+}
+.header-wrapper .top-bar .nav .modal .modal-content {
+  background-color: var(--primary-bg-color);
+}
+.header-wrapper .top-bar .nav .modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 .header-wrapper .logo-wrapper .logo img {
   width: 150px;
