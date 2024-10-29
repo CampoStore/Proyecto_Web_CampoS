@@ -13,6 +13,11 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sintony", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .header-wrapper .top-bar {
   background-color: rgba(0,0,0,0.05);
   border-bottom: solid 1px rgba(0,0,0,0.1);
@@ -33,7 +38,7 @@ body {
 .header-wrapper .top-bar .nav .modal .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
-.header-wrapper .logo-wrapper .logo img {
+.header-wrapper .logo-wrapper .logo img, .footer-wrapper .brand .logo img {
   width: 150px;
   height: auto;
 }
@@ -67,8 +72,23 @@ body {
 .header-wrapper .nav-desktop .nav-item:last-child .nav-link:hover::after {
   width: calc(100% - 16px);
 }
+.footer-wrapper, .footer-wrapper .form-control, .footer-wrapper .btn {
+  font-size: 0.875rem;
+}
+.footer-wrapper, .footer-wrapper .brand, .footer-wrapper .copyright-and-legal {
+  background-color: rgba(0,0,0,0.05);
+}
+.footer-wrapper .form-control, .footer-wrapper .form-control::placeholder {
+  color: var(--primary-text-color);
+}
+.footer-wrapper .form-control {
+  background-color: transparent;
+  border-color: rgba(255,255,255,0.3);
+}
+.footer-wrapper .form-check-label, .footer-wrapper .copyright-and-legal {
+  font-size: 0.75rem;
+}
 @media screen and (min-width: 768px) {
   .header-wrapper .logo-wrapper .logo img {
     width: 200px;
   }
-}
