@@ -32,37 +32,96 @@
       <div class="top-bar z-0">
         <div class="container">
           <div class="row py-1">
-            <div class="col-6">
+            <div class="col-6 col-md-3">
               <ul class="nav">
                 <li class="nav-item px-2 ps-0">
-                  <a href="#" target="_blank" class="nav-link p-0 text-white">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
                     <i class="bi bi-facebook"></i>
                   </a>
                 </li>
                 <li class="nav-item px-2">
-                  <a href="#" target="_blank" class="nav-link p-0 text-white">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
                     <i class="bi bi-instagram"></i>
                   </a>
                 </li>
                 <li class="nav-item px-2">
-                  <a href="#" target="_blank" class="nav-link p-0 text-white">
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
                     <i class="bi bi-youtube"></i>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="d-none">
-              <p class="m-0">El campo siempre a tu alcance</p>
+            <div
+              class="d-none d-md-flex col-md-6 justify-content-center align-items-center">
+              <p class="m-0 text-uppercase">El campo siempre a tu alcance</p>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-md-3">
               <ul class="nav justify-content-end">
                 <li class="nav-item px-2">
-                  <a href="#" class="nav-link p-0 text-white">
-                    <i class="bi bi-bell"></i>
+                  <a
+                    href="#"
+                    class="nav-link p-0 text-white"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Notificaciones">
+                    <!-- Button trigger notificattions modal -->
+                    <i
+                      class="bi bi-bell"
+                      data-bs-toggle="modal"
+                      data-bs-target="#notificationsModal"></i>
+                    <!-- Notifications modal -->
+                    <div
+                      class="modal fade"
+                      id="notificationsModal"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="notificationsModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h2
+                              class="modal-title fs-5"
+                              id="notificationsModalLabe">
+                              Notificaciones
+                            </h2>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">Hola mundo</div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal">
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </a>
                 </li>
                 <li class="nav-item px-2 pe-0">
-                  <a href="#" class="nav-link p-0 text-white">
+                  <a
+                    href="#"
+                    class="nav-link p-0 text-white"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Iniciar sesión">
                     <i class="bi bi-person"></i>
                   </a>
                 </li>
@@ -73,10 +132,10 @@
       </div>
       <div class="nav-wrapper sticky-top z-0">
         <div class="container">
-          <div class="row py-2">
+          <div class="row py-2 py-md-3">
             <div class="col col-md-4 d-flex flex-row">
               <h1 class="logo-wrapper m-0 d-flex flex-row align-items-center">
-                <a href="#" class="logo d-block">
+                <a href="#" class="logo d-flex">
                   <img
                     src="/img/campo-store-logo-color.svg"
                     alt="Campo Store"
@@ -97,11 +156,11 @@
                 class="offcanvas offcanvas-end mobile-menu"
                 data-bs-backdrop="static"
                 tabindex="-1"
-                aria-labelledby="ogoMobileMenu">
+                aria-labelledby="logoMobileMenu">
                 <div class="offcanvas-header">
                   <button
                     type="button"
-                    class="btn-close"
+                    class="btn-close btn-close-white"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
                 </div>
@@ -147,17 +206,26 @@
                     </button>
                     <ul class="nav justify-content-center p-0">
                       <li class="nav-item">
-                        <a href="#" target="_blank" class="nav-link text-white">
+                        <a
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                          class="nav-link text-white">
                           <i class="bi bi-facebook"></i>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" target="_blank" class="nav-link text-white">
+                        <a
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                          class="nav-link text-white">
                           <i class="bi bi-instagram"></i>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" target="_blank" class="nav-link text-white">
+                        <a
+                          href="https://www.youtube.com/"
+                          target="_blank"
+                          class="nav-link text-white">
                           <i class="bi bi-youtube"></i>
                         </a>
                       </li>
@@ -193,6 +261,9 @@
         </div>
       </div>
     </header>
+    <!--Floating UI Script-->
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.11"></script>
     <!--Bootstrap Script-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
