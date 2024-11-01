@@ -5,6 +5,7 @@
   --primary-text-color: #ffffff;
   --hover-link-color: #dcdcdc;
 }
+/*** General Styles ***/
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -18,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
 }
+.transition-03s-on {
+  transition: all 0.3s ease-in-out;
+}
+/*** Header Styles ***/
 .header-wrapper .top-bar {
   background-color: rgba(0,0,0,0.05);
   border-bottom: solid 1px rgba(0,0,0,0.1);
@@ -37,6 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-wrapper .top-bar .nav .modal .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
+}
+.header-wrapper .nav-wrapper {
+  background-color: rgb(from var(--primary-bg-color) r g b / 65%);
+}
+.header-wrapper .nav-wrapper.active {
+  background-color: rgb(from var(--primary-bg-color) r g b / 100%);
 }
 .header-wrapper .logo-wrapper .logo img, .footer-wrapper .brand .logo img {
   width: 150px;
@@ -72,6 +83,30 @@ h1, h2, h3, h4, h5, h6 {
 .header-wrapper .nav-desktop .nav-item:last-child .nav-link:hover::after {
   width: calc(100% - 16px);
 }
+.header-wrapper .nav-wrapper.active .nav-desktop .nav-link::after {
+  bottom: -12.5px;
+  height: 3px;
+}
+/*** Carousel Styles ***/
+.main-carousel-wrapper {
+  margin-top: -58.2px;
+}
+.main-carousel-wrapper .carousel-inner, .main-carousel-wrapper .carousel-item > img {
+  height: 100%;
+  min-height: 80vh;
+  max-height: 80vh;
+}
+.main-carousel-wrapper .carousel-caption-custom {
+  left: 15%;
+  width: 65%;
+}
+.main-carousel-wrapper .carousel-caption-custom h5{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-shadow: 0 .25rem .5rem rgba(0,0,0,0.5);
+}
+/*** Footer Styles ***/
 .footer-wrapper, .footer-wrapper .form-control, .footer-wrapper .btn {
   font-size: 0.875rem;
 }
@@ -91,5 +126,31 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 768px) {
   .header-wrapper .logo-wrapper .logo img {
     width: 200px;
+  }
+  .header-wrapper .nav-wrapper.active .logo-wrapper .logo img {
+    width: 180px;
+  }
+  .header-wrapper .nav-wrapper.active .row {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  .main-carousel-wrapper {
+    margin-top: -77.24px;
+  }
+  .main-carousel-wrapper .carousel-caption-custom {
+    width: 50%;
+  }
+  .main-carousel-wrapper .carousel-caption-custom h5 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-carousel-wrapper .carousel-caption-custom h5 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-carousel-wrapper .carousel-caption-custom h5 {
+    font-size: 3.5rem;
   }
 }
