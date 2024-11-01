@@ -110,7 +110,7 @@ h6 {
 }
 
 .we-help-section {
-  padding: 7rem 0;
+  padding: 1rem 0;
 }
 .we-help-section .imgs-grid {
   display: -ms-grid;
@@ -164,4 +164,45 @@ h6 {
   -ms-grid-row-span: 27;
   grid-row: 6 / span 27;
   padding-top: 20px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.jumbotron {
+  background-image: url("/img/descuento.png"); /* Ruta a tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 50px;
+  position: relative;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+
+  padding: 30px;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
