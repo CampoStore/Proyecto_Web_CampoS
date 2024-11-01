@@ -96,6 +96,16 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 80vh;
   max-height: 80vh;
 }
+.main-carousel-wrapper .carousel-caption-custom {
+  left: 15%;
+  width: 65%;
+}
+.main-carousel-wrapper .carousel-caption-custom h5{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-shadow: 0 .25rem .5rem rgba(0,0,0,0.5);
+}
 /*** Footer Styles ***/
 .footer-wrapper, .footer-wrapper .form-control, .footer-wrapper .btn {
   font-size: 0.875rem;
@@ -126,5 +136,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main-carousel-wrapper {
     margin-top: -77.24px;
+  }
+  .main-carousel-wrapper .carousel-caption-custom {
+    width: 50%;
+  }
+  .main-carousel-wrapper .carousel-caption-custom h5 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-carousel-wrapper .carousel-caption-custom h5 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-carousel-wrapper .carousel-caption-custom h5 {
+    font-size: 3.5rem;
   }
 }
