@@ -31,6 +31,24 @@ window.addEventListener("scroll", function (e) {
   ticking = true;
 });
 
+/*** Script Countdown Launch ***/
+
+const countDownDate = new Date('Jan 1, 2025 00:00:00').getTime();
+const updateTime = setInterval(function() {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.querySelector('.countdown.weeks .countdown-number'). innerHTML = weeks;
+  document.querySelector('.countdown.days .countdown-number'). innerHTML = days;
+  document.querySelector('.countdown.hours .countdown-number'). innerHTML = hours;
+  document.querySelector('.countdown.minutes .countdown-number'). innerHTML = minutes;
+  document.querySelector('.countdown.seconds .countdown-number'). innerHTML = seconds;
+})
+
 /*** Script Carousel ***/
 
 let currentIndex = 0;
