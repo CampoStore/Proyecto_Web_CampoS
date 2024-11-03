@@ -127,7 +127,13 @@ h1, h2, h3, h4, h5, h6 {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 .header-wrapper .nav-wrapper {
+  position: relative;
+  z-index: 1;
   background-color: rgb(from var(--dark-green-1000) r g b / 65%);
+}
+.header-wrapper .nav-wrapper.fixed-top {
+  position: fixed;
+  z-index: 1030;
 }
 .header-wrapper .nav-wrapper.active {
   background-color: rgb(from var(--dark-green-1000) r g b / 100%);
