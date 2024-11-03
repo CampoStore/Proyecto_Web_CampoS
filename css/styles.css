@@ -1,9 +1,89 @@
 :root {
-  /*** Background Color Variable ***/
-  --primary-bg-color: #1d2101;
-  /*** Text Color Variable ***/
-  --primary-text-color: #ffffff;
-  --hover-link-color: #dcdcdc;
+  /*** Dark Green Color Variables ***/
+  --dark-green-1000: #1d2101;
+  --dark-green-950: #1c3600;
+  --dark-green-900: #3a6007;
+  --dark-green-800: #467302;
+  --dark-green-700: #569200;
+  --dark-green-600: #72c100;
+  --dark-green-500: #95f000;
+  --dark-green-400: #b5ff12;
+  --dark-green-300: #cdff48;
+  --dark-green-200: #e4ff8b;
+  --dark-green-100: #f1ffc1;
+  --dark-green-50: #faffe2;
+  /*** Light Green Color Variables ***/
+  --light-green-950: #2c3102;
+  --light-green-900: #515710;
+  --light-green-800: #62670d;
+  --light-green-700: #7c8308;
+  --light-green-600: #a0a603;
+  --light-green-500: #d5d80a;
+  --light-green-400: #f2f229;
+  --light-green-300: #fbf95b;
+  --light-green-200: #fffc97;
+  --light-green-100: #fffcc8;
+  --light-green-50: #fffce5;
+  /*** Orange Color Variables ***/
+  --orange-50: #fffbeb;
+  --orange-100: #fff5c6;
+  --orange-200: #ffea88;
+  --orange-300: #ffd949;
+  --orange-400: #ffc620;
+  --orange-500: #f29f05;
+  --orange-600: #dd7c02;
+  --orange-700: #b85705;
+  --orange-800: #95420b;
+  --orange-900: #7a360d;
+  --orange-950: #461b02;
+  /*** Light Blue Color Variables ***/
+  --light-blue-50: #f4f8fb;
+  --light-blue-100: #e7f2f7;
+  --light-blue-200: #cae2ed;
+  --light-blue-300: #8fc4d9;
+  --light-blue-400: #66afca;
+  --light-blue-500: #4395b4;
+  --light-blue-600: #327997;
+  --light-blue-700: #29617b;
+  --light-blue-800: #255367;
+  --light-blue-900: #244656;
+  --light-blue-950: #182d39;
+  /*** Red Color Variables ***/
+  --red-50: #fff1f0;
+  --red-100: #ffe0dd;
+  --red-200: #ffc6c1;
+  --red-300: #ffa097;
+  --red-400: #ff695b;
+  --red-500: #ff3a28;
+  --red-600: #f21905;
+  --red-700: #d31402;
+  --red-800: #ae1406;
+  --red-900: #8f180d;
+  --red-950: #4f0700;
+  /*** White Color Variables ***/
+  --white-50: #ffffff;
+  --white-100: #efefef;
+  --white-200: #dcdcdc;
+  --white-300: #bdbdbd;
+  --white-400: #989898;
+  --white-500: #7c7c7c;
+  --white-600: #656565;
+  --white-700: #525252;
+  --white-800: #464646;
+  --white-900: #3d3d3d;
+  --white-950: #292929;
+  /*** Black Color Variables ***/
+  --black-50: #f6f6f6;
+  --black-100: #e7e7e7;
+  --black-200: #d1d1d1;
+  --black-300: #b0b0b0;
+  --black-400: #888888;
+  --black-500: #6d6d6d;
+  --black-600: #5d5d5d;
+  --black-700: #4f4f4f;
+  --black-800: #454545;
+  --black-900: #3d3d3d;
+  --black-950: #000000;
 }
 /*** General Styles ***/
 body {
@@ -11,8 +91,8 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
+  background-color: var(--dark-green-1000);
+  color: var(--white-50);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Sintony", sans-serif;
@@ -30,31 +110,34 @@ h1, h2, h3, h4, h5, h6 {
 .header-wrapper .top-bar .nav {
   font-size: 0.875rem;
 }
+.header-wrapper .top-bar .nav .nav-link {
+  cursor: pointer;
+}
 .header-wrapper .top-bar .nav .nav-link:hover {
-  color: var(--hover-link-color) !important;
+  color: var(--white-300) !important;
 }
 .header-wrapper .top-bar .col-md-6 {
   font-size: 0.75rem;
   letter-spacing: 3px;
 }
 .header-wrapper .top-bar .nav .modal .modal-content {
-  background-color: var(--primary-bg-color);
+  background-color: var(--dark-green-1000);
 }
 .header-wrapper .top-bar .nav .modal .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 .header-wrapper .nav-wrapper {
-  background-color: rgb(from var(--primary-bg-color) r g b / 65%);
+  background-color: rgb(from var(--dark-green-1000) r g b / 65%);
 }
 .header-wrapper .nav-wrapper.active {
-  background-color: rgb(from var(--primary-bg-color) r g b / 100%);
+  background-color: rgb(from var(--dark-green-1000) r g b / 100%);
 }
 .header-wrapper .logo-wrapper .logo img, .footer-wrapper .brand .logo img {
   width: 150px;
   height: auto;
 }
 .header-wrapper .mobile-menu {
-  background-color: var(--primary-bg-color);
+  background-color: var(--dark-green-1000);
 }
 .header-wrapper .mobile-menu .nav-link, .header-wrapper .mobile-menu .btn {
   letter-spacing: 3px;
@@ -87,6 +170,43 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -12.5px;
   height: 3px;
 }
+.tooltip .tooltip-inner {
+  background-color: #ffffff;
+  color: var(--dark-green-1000);
+}
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
+  border-left-color: #ffffff;
+}
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
+  border-bottom-color: #ffffff;
+}
+.header-wrapper .modal .modal-header {
+  border-bottom-color: var(--dark-green-950);
+}
+.header-wrapper .modal .modal-body .countdown .countdown-number {
+  color: var(--dark-green-600);
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+.header-wrapper .modal .modal-body .countdown .countdown-title {
+  color: var(--dark-green-700);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+.header-wrapper .modal .modal-body .form-newsletter .btn {
+  background-color: var(--dark-green-400);
+  color: var(--dark-green-800);
+  letter-spacing: 4px;
+}
+.header-wrapper .modal .modal-footer {
+  border-top-color: var(--dark-green-950);
+}
+.header-wrapper .modal .modal-footer .btn {
+  color: var(--dark-green-900);
+  background-color: var(--dark-green-950);
+  border-color: var(--dark-green-950);
+}
 /*** Carousel Styles ***/
 .main-carousel-wrapper {
   margin-top: -58.2px;
@@ -114,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0,0,0,0.05);
 }
 .footer-wrapper .form-control, .footer-wrapper .form-control::placeholder {
-  color: var(--primary-text-color);
+  color: var(--white-50);
 }
 .footer-wrapper .form-control {
   background-color: transparent;
@@ -145,11 +265,32 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (min-width: 992px) {
+  .header-wrapper .modal .modal-body > h3 {
+    font-size: 1.5rem !important;
+  }
+  .header-wrapper .modal .modal-body .countdown .countdown-number {
+    font-size: 3.5rem;
+  }
+  .header-wrapper .modal .modal-body .countdown .countdown-title {
+    font-size: 1rem;
+  }
+  .header-wrapper .modal .modal-body .form-newsletter div:first-child {
+    width: 40%;
+  }
+  .header-wrapper .modal .modal-body .form-newsletter div:last-child {
+    width: 25%;
+  }
   .main-carousel-wrapper .carousel-caption-custom h5 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
+  .header-wrapper .modal .modal-body .form-newsletter div:first-child {
+    width: 30%;
+  }
+  .header-wrapper .modal .modal-body .form-newsletter div:last-child {
+    width: 15%;
+  }
   .main-carousel-wrapper .carousel-caption-custom h5 {
     font-size: 3.5rem;
   }
