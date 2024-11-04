@@ -57,35 +57,38 @@ const updateTime = setInterval(function () {
     seconds;
 });
 
-/*** Script Carousel ***/
+/*** Vegetable Carousel ***/
 
-let currentIndex = 0;
-const items = document.querySelectorAll(".carousel");
-
-function showSlide(index) {
-  items.forEach((item, i) => {
-    item.classList.toggle("active", i === index);
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1500,
+    center: false,
+    dots: true,
+    loop: true,
+    margin: 25,
+    nav: true,
+    navText: [
+      '<i class="bi bi-arrow-left"></i>',
+      '<i class="bi bi-arrow-right"></i>',
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+    },
   });
-  document.querySelector(".carousel").style.transform = `translateX(-${
-    index * 100
-  }%)`;
-}
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % items.length;
-  showSlide(currentIndex);
-}
-
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
-  showSlide(currentIndex);
-}
-
-// Agregar event listeners para los botones "Next" y "Prev"
-document.getElementById("nextButton").addEventListener("click", nextSlide);
-document.getElementById("prevButton").addEventListener("click", prevSlide);
-
-// Cambio automático de diapositivas cada 5 segundos
-setInterval(nextSlide, 5000);
-
-// Carrussel productos destacados
+});
