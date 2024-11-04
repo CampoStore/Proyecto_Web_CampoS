@@ -16,10 +16,10 @@ let ticking = false;
 
 function doSomething(scrollPos) {
   if (scrollPos >= 30) {
-    navFixed.classList.add("fixed-top", "active");
+    navFixed.classList.add("fixed-top", "active", "shadow-lg");
     mainCarouselWrapper.classList.add("mt-0");
   } else {
-    navFixed.classList.remove("fixed-top", "active");
+    navFixed.classList.remove("fixed-top", "active", "shadow-lg");
     mainCarouselWrapper.classList.remove("mt-0");
   }
 }
