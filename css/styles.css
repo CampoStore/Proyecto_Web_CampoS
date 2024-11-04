@@ -133,7 +133,7 @@ h6 {
 }
 .header-wrapper .nav-wrapper {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   background-color: rgb(from var(--dark-green-1000) r g b / 65%);
 }
 .header-wrapper .nav-wrapper.fixed-top {
