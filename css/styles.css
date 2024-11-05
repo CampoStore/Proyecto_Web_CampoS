@@ -84,6 +84,9 @@
   --black-800: #454545;
   --black-900: #3d3d3d;
   --black-950: #000000;
+  /*** Fonts Variables ***/
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Sintony", sans-serif;
 }
 /*** General Styles ***/
 body {
@@ -243,8 +246,11 @@ h6 {
   text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 /*** About Styles ***/
-.we-help-section {
-  padding: 6rem 0 3rem 0;
+.we-help-section, .discount-section {
+  background-color: var(--dark-green-950);
+}
+.we-help-section, .shop-section {
+  padding: 3rem 0;
 }
 .we-help-section .imgs-grid {
   display: -ms-grid;
@@ -252,19 +258,6 @@ h6 {
   -ms-grid-columns: repeat(1fr, 27);
   grid-template-columns: repeat(27, 1fr);
   position: relative;
-}
-.we-help-section .imgs-grid:before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 100px;
-  background-image: url("../images/dots-green.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-transform: translate(-40%, -40%);
-  -ms-transform: translate(-40%, -40%);
-  transform: translate(-40%, -40%);
-  z-index: -1;
 }
 .we-help-section .imgs-grid .grid {
   position: relative;
@@ -299,98 +292,112 @@ h6 {
   grid-row: 6 / span 27;
   padding-top: 20px;
 }
+.we-help-section .bi {
+  color: var(--dark-green-700);
+}
 /*** Discount Styles ***/
-.jumbotron {
+.discount-section {
+  background: linear-gradient(0deg, var(--white-50) 50%, var(--dark-green-950) 50%);
+}
+.discount-section .jumbotron {
   background-image: url("/img/descuento.png"); /* Ruta a tu imagen */
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
-  color: #ffffff;
-  padding: 50px;
-  position: relative;
-  text-align: left;
-  background-color: white;
+  background-color: var(--black-300);
   border-radius: 10px;
-
-  padding: 30px;
+  padding: 2rem;
 }
-.jumbotron h1 {
-  font-size: 3rem;
+.discount-section .jumbotron h2 {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
   font-weight: bold;
 }
-.jumbotron p {
-  font-size: 1.2rem;
-  color: #ffffff;
+.discount-section .jumbotron p {
+  font-size: 1rem;
 }
-.btn-primary {
-  background-color: #333;
-  color: #fff;
+.discount-section .btn-primary {
+  background-color: var(--dark-green-800);
+  color: var(--white-50);
   padding: 10px 20px;
   border: none;
   font-weight: bold;
 }
-.btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+.discount-section .btn-primary:hover, .discount-section .btn-primary:active {
+  background-color: var(--dark-green-700);
+  border-color: var(--dark-green-700);
 }
 /*** Shop Styles ***/
+.shop-section {
+  background-color: var(--white-50);
+}
+.vesitable .section-title {
+  color: var(--dark-green-800);
+  font-weight: 700;
+}
 .vesitable .vesitable-item {
   height: 100%;
-  transition: 0.5s;
+  background-color: var(--black-50);
 }
-
 .vesitable .vesitable-item:hover {
-  box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+  background-color: var(--black-100);
 }
-
+.vesitable .vesitable-item:hover .vesitable-img img {
+  transform: scale(1.1);
+}
 .vesitable .vesitable-item .vesitable-img {
   overflow: hidden;
-  transition: 0.5s;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
 }
-
 .vesitable .vesitable-item .vesitable-img img {
+  mix-blend-mode: multiply;
+}
+.vesitable .vesitable-item .badge-product {
+  top: 10px;
+  right: 10px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: var(--dark-green-600);
+}
+.vesitable .vesitable-item .product-title {
+  color: var(--dark-green-800);
+}
+.vesitable .vesitable-item .product-description {
+  color: var(--black-700);
+}
+.vesitable .vesitable-item .product-buy {
+  color: var(--dark-green-600);
+  border: 1px solid var(--dark-green-600);
+}
+.vesitable .owl-carousel.owl-loaded {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.vesitable .owl-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.vesitable .owl-nav .owl-prev, .vesitable .owl-nav .owl-next {  top: 0;
+  color: var(--dark-green-600);
+  padding: 5px 25px;
+  border: 1px solid var(--dark-green-600);
+  border-radius: 20px;
   transition: 0.5s;
 }
-
-.vesitable .vesitable-item .vesitable-img img:hover {
-  transform: scale(1.2);
-}
-
-.vesitable .owl-stage {
-  margin: 50px 0;
-  position: relative;
-}
-
 .vesitable .owl-nav .owl-prev {
-  position: absolute;
-  top: -8px;
-  right: 0;
-  color: var(--bs-primary);
-  padding: 5px 25px;
-  border: 1px solid var(--bs-secondary);
-  border-radius: 20px;
-  transition: 0.5s;
-}
-
-.vesitable .owl-nav .owl-prev:hover {
-  background: var(--bs-secondary);
-  color: var(--bs-white);
-}
-
-.vesitable .owl-nav .owl-next {
-  position: absolute;
-  top: -8px;
   right: 88px;
-  color: var(--bs-primary);
-  padding: 5px 25px;
-  border: 1px solid var(--bs-secondary);
-  border-radius: 20px;
-  transition: 0.5s;
 }
-
-.vesitable .owl-nav .owl-next:hover {
-  background: var(--bs-secondary);
-  color: var(--bs-white);
+.vesitable .owl-nav .owl-next {
+  right: 0;
+}
+.vesitable .owl-nav .owl-prev:hover, .vesitable .owl-nav .owl-next:hover {
+  background: var(--dark-green-600);
+  color: var(--white-50);
 }
 /*** Footer Styles ***/
 .footer-wrapper,
@@ -415,6 +422,14 @@ h6 {
 .footer-wrapper .copyright-and-legal {
   font-size: 0.75rem;
 }
+@media screen and (min-width: 576px) {
+  .we-help-section, .shop-section {
+    padding: 4rem 0;
+  }
+  .vesitable .owl-carousel.owl-loaded {
+    margin-top: -38px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-wrapper .logo-wrapper .logo img {
     width: 200px;
@@ -434,6 +449,12 @@ h6 {
   }
   .main-carousel-wrapper .carousel-caption-custom h5 {
     font-size: 2.5rem;
+  }
+  .we-help-section, .shop-section {
+    padding: 5rem 0;
+  }
+  .vesitable .owl-carousel.owl-loaded {
+    margin-top: -40px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -455,6 +476,18 @@ h6 {
   .main-carousel-wrapper .carousel-caption-custom h5 {
     font-size: 3rem;
   }
+  .we-help-section, .shop-section {
+    padding: 6rem 0;
+  }
+  .discount-section .jumbotron {
+    padding-right: 35%;
+  }
+  .discount-section .jumbotron h2 {
+    font-size: 2rem;
+  }
+  .discount-section .jumbotron p {
+    font-size: 1.125rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header-wrapper .modal .modal-body .form-newsletter div:first-child {
@@ -465,5 +498,19 @@ h6 {
   }
   .main-carousel-wrapper .carousel-caption-custom h5 {
     font-size: 3.5rem;
+  }
+  .we-help-section, .shop-section {
+    padding: 7rem 0;
+  }
+  .discount-section .jumbotron {
+    padding-right: 35%;
+  }
+  .discount-section .jumbotron h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .discount-section .jumbotron {
+    padding-right: 40%;
   }
 }
