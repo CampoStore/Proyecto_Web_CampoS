@@ -38,7 +38,7 @@
     <title>Campo Store</title>
   </head>
   <body>
-    <header class="header-wrapper">
+    <header id="top-page" class="header-wrapper">
       <div class="top-bar z-0">
         <div class="container">
           <div class="row py-1">
@@ -435,22 +435,22 @@
         <div class="we-help-section">
           <div class="container">
             <div class="row justify-content-between">
-              <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="col-12 col-lg-6 col-xl-7 mb-3 mb-lg-0 d-lg-flex flex-lg-column justify-content-lg-center">
                 <div class="imgs-grid">
                   <div class="grid grid-1">
-                    <img src="img/fresas.jpg" alt="Untree.co" />
+                    <img class="shadow" src="img/fresas.jpg" alt="Untree.co" />
                   </div>
                   <div class="grid grid-2">
-                    <img src="img/Platranos.jpg" alt="Untree.co" />
+                    <img class="shadow" src="img/Platranos.jpg" alt="Untree.co" />
                   </div>
                   <div class="grid grid-3">
-                    <img src="img/fruit.jpg" alt="Untree.co" />
+                    <img class="shadow" src="img/fruit.jpg" alt="Untree.co" />
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5 ps-lg-2">
-                <h2 class="section-title mb-4">Nosotros</h2>
-                <p>
+              <div class="col-12 col-lg-6 col-xl-5 ps-lg-2 d-lg-flex flex-lg-column justify-content-lg-center">
+                <h2 class="section-title fs-1 mb-2 mb-xl-3">Nosotros</h2>
+                <p class="fs-6 mb-xl-4">
                   Fundamos Campo Store con la visión de conectar directamente a
                   los consumidores con los pequeños productores, garantizando
                   precios justos, productos frescos y auténticos, y promoviendo
@@ -458,29 +458,20 @@
                   representa un apoyo directo a familias campesinas y a
                   prácticas agrícolas sostenibles que respetan la tierra.
                 </p>
-                <div class="row gy-2 gx-4 mb-4">
-                  <div class="col-sm-6">
-                    <p class="mb-0 fs-4">Caracteristicas</p>
+                <div class="row gy-2 gx-4">
+                  <div class="col-12 col-sm-6">
+                    <h3 class="mb-2 mb-xl-3 fs-4">Caracteristicas</h3>
                   </div>
                 </div>
-                <div class="row gy-2 gx-4 mb-4">
-                  <div class="col-sm-6">
-                    <p>
-                      <i class="bi bi-bookmark text-primary me-2"></i
-                      >Sostenibilidad
-                    </p>
+                <div class="row gy-2 gx-4">
+                  <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
+                    <p class="mb-0 fs-6"><i class="bi bi-flower1 me-2"></i>Sostenibilidad</p>
                   </div>
-                  <div class="col-sm-6">
-                    <p class="mb-0">
-                      <i class="bi bi-bookmark text-primary me-2"></i>Apoyo a
-                      economías locales
-                    </p>
+                  <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
+                    <p class="mb-0 fs-6"><i class="bi bi-piggy-bank me-2"></i>Apoyo a economías locales</p>
                   </div>
-                  <div class="col-sm-6">
-                    <p class="mb-0">
-                      <i class="bi bi-bookmark text-primary me-2"></i>Procesos
-                      agiles
-                    </p>
+                  <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
+                    <p class="mb-0 fs-6"><i class="bi bi-people me-2"></i>Procesos agiles</p>
                   </div>
                 </div>
               </div>
@@ -488,279 +479,257 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="discount-section">
         <div class="container">
-          <div class="jumbotron">
-            <h1 class="text-start">Aprovecha un 20% de descuento</h1>
+          <div class="jumbotron shadow">
+            <h2 class="text-start">Aprovecha un 20% de descuento</h2>
             <p class="text-start">
               En la suscripción de la membresía y obtén múltiples beneficios a
               la hora de vender sus productos.
             </p>
             <div class="">
-              <button type="button" class="btn btn-primary">
+              <button type="button" class="btn btn-primary shadow transition-03s-on">
                 Adquiérela aquí
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section id="shop">
-        <div class="vesitable">
-          <div class="container py-5">
-            <h1 class="mb-0">Productos Destacados</h1>
-            <div class="owl-carousel vegetable-carousel justify-content-center">
-              <div
-                class="border border-primary rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/brocoli.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
+      <section id="shop" class="shop-section">
+        <div class="vesitable container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="section-title fs-1 mb-3 mb-sm-0">Productos Destacados</h1>
+              <div class="owl-carousel vegetable-carousel justify-content-center">
                 <div
-                  class="text-white bg-primary px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Vegetales
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Brocolis</h4>
-                  <p>
-                    Nuestro brócoli es cultivado de manera sostenible en tierras
-                    fértiles de Boyacá, cuidadosamente seleccionado para
-                    ofrecerte un producto fresco, nutritivo y delicioso.
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$5.500 / kg</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="bi bi-info-circle me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/brocoli.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded-3 position-absolute">
+                    Vegetales
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Brocolis</h4>
+                    <p class="product-description">
+                      Nuestro brócoli es cultivado de manera sostenible en tierras fértiles de Boyacá...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$5.500 / kg</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-warning rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/mangos.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-warning px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Frutas
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Mangos</h4>
-                  <p>
-                    Disfruta del sabor tropical de nuestros mangos frescos,
-                    cultivados con esmero en tierras de Pereira. Cada mango es
-                    seleccionado a mano para garantizar su calidad, dulzura y
-                    jugosidad. Ricos en vitaminas A y C
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$7.000 / kg</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/mangos.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Frutas
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Mangos</h4>
+                    <p class="product-description">
+                      Disfruta del sabor tropical de nuestros mangos frescos,
+                      cultivados con esmero en tierras de Pereira...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$7.000 / kg</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-primary rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/tomates.jpg"
-                    class="img-fluid w-100 rounded-top bg-light"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-primary px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Vegetales
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Tomates</h4>
-                  <p>
-                    Nuestros tomates son cultivados por una familia
-                    emprendedora. Elegimos tomates maduros de gran frescura y
-                    jugosidad cultivados con los más altos estándares de calidad
-                    para multiples preparaciones
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$3.490 / kg</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/tomates.jpg"
+                      class="img-fluid w-100 rounded-top bg-light transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Vegetales
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Tomates</h4>
+                    <p class="product-description">
+                      Nuestros tomates son cultivados por una familia
+                      emprendedora...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$3.490 / kg</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-primary rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/lechugas.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-primary px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Vegetables
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Lechugas</h4>
-                  <p>
-                    Manejamos una amplia variedad de lechugas frescas con
-                    diferentes tipos de color y tamaños, procurando que las
-                    personas que las utilicen puedan sacar el mayor provecho con
-                    diferentes preparaciones.
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$1,400 / Lb</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/lechugas.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Vegetables
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Lechugas</h4>
+                    <p class="product-description">
+                      Manejamos una amplia variedad de lechugas frescas con
+                      diferentes tipos de color y tamaños...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$1,400 / Lb</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-warning rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/mandarinas.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-warning px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Frutas
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Mandarinas</h4>
-                  <p>
-                    Deléitate con el sabor refrescante y natural de nuestras
-                    mandarinas. Cultivadas con un gran amor y calidad, estas
-                    mandarinas son jugosas, fáciles de pelar y tienen un
-                    equilibrio perfecto entre dulzura y acidez.
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$3.000 / Lb</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/mandarinas.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Frutas
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Mandarinas</h4>
+                    <p class="product-description">
+                      Deléitate con el sabor refrescante y natural de nuestras
+                      mandarinas...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$3.000 / Lb</p>
+                      <a
+                        href="#"
+                        class="product-buy btn ounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-warning rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/fresas.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-warning px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Frutas
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Fresas</h4>
-                  <p>
-                    Disfruta de nuestras fresas frescas cultivadas con la mejor
-                    calidad para ofrecer un sabor dulce y una textura jugosa
-                    para que puedan realizar miles de preparaciones y sacarle el
-                    mayor provecho.
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$11.000 / Lb</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/fresas.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Frutas
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Fresas</h4>
+                    <p class="product-description">
+                      Disfruta de nuestras fresas frescas cultivadas con la mejor
+                      calidad...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$11.000 / Lb</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-primary rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/colifror.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-primary px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Vegetales
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Colifror</h4>
-                  <p>
-                    Nuestro producto ha sido sembrado en las mejores tierras de
-                    Santander; esto genera que sean crujientes, frescas y de
-                    buena calidad para así tener diferentes preparaciones. Es
-                    muy rica en fibra y antioxidantes.
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$4.600 / Lb</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/colifror.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Vegetales
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Colifror</h4>
+                    <p class="product-description">
+                      Nuestro producto ha sido sembrado en las mejores tierras de
+                      Santander...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$4.600 / Lb</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="border border-warning rounded position-relative vesitable-item">
-                <div class="vesitable-img">
-                  <img
-                    src="img/melones.jpg"
-                    class="img-fluid w-100 rounded-top"
-                    alt="" />
-                </div>
                 <div
-                  class="text-white bg-warning px-3 py-1 rounded position-absolute"
-                  style="top: 10px; right: 10px">
-                  Vegetable
-                </div>
-                <div class="p-4 rounded-bottom">
-                  <h4>Melones</h4>
-                  <p>
-                    Disfruta del exquisito sabor de nuestros melones frescos
-                    cultivados en tierras de Caldas, Antioquia, para así obtener
-                    en ellas la mayor dulzura, frescura para ser aprovechado en
-                    diferentes preparaciones.
-                  </p>
-                  <div class="d-flex justify-content-between flex-lg-wrap">
-                    <p class="text-dark fs-5 fw-bold mb-0">$10.800 / Lb</p>
-                    <a
-                      href="#"
-                      class="btn border border-secondary rounded-pill px-3 text-primary"
-                      ><i class="fa fa-shopping-bag me-2 text-primary"></i
-                      >Comprar</a
-                    >
+                  class="rounded-3 position-relative vesitable-item transition-03s-on">
+                  <div class="vesitable-img transition-03s-on">
+                    <img
+                      src="img/melones.jpg"
+                      class="img-fluid w-100 rounded-top transition-03s-on"
+                      alt="" />
+                  </div>
+                  <div
+                    class="badge-product px-3 py-1 rounded position-absolute">
+                    Vegetable
+                  </div>
+                  <div class="p-4 rounded-bottom">
+                    <h4 class="product-title">Melones</h4>
+                    <p class="product-description">
+                      Disfruta del exquisito sabor de nuestros melones frescos
+                      cultivados en tierras de Caldas, Antioquia...
+                    </p>
+                    <div class="d-flex justify-content-between flex-lg-wrap align-items-center">
+                      <p class="text-dark fs-6 fw-bold mb-0">$10.800 / Lb</p>
+                      <a
+                        href="#"
+                        class="product-buy btn rounded-3 px-3"
+                        ><i class="bi bi-bag me-1"></i
+                        >Comprar</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -819,10 +788,8 @@
           <div class="row py-4">
             <div class="col-12 col-md-6 col-lg-3">
               <h5 class="footer-heading">Nosotros</h5>
-              <p class="py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                imperdiet pulvinar justo vel finibus. Donec vehicula ultrices
-                consectetur.
+              <p class="py-2 pe-md-5">
+                Fundamos Campo Store con la visión de conectar directamente a los consumidores con los pequeños productores.
               </p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 col-lg-2">
