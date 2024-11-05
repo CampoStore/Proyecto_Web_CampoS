@@ -64,7 +64,7 @@ $(document).ready(function(){
     autoplay: true,
     smartSpeed: 1500,
     center: false,
-    dots: true,
+    dots: false,
     loop: true,
     margin: 25,
     nav: true,
@@ -91,4 +91,19 @@ $(document).ready(function(){
       },
     },
   });
+});
+
+/*** Script Waypoints ***/
+
+const topPage = new Waypoint({
+  element: document.getElementById('top-page'),
+  handler: function() {
+    console.log(`Scrolled to top page!`)
+  }
+});
+const aboutSection = new Waypoint({
+  element: document.getElementById('about'),
+  handler: function() {
+    console.log(`Scrolled to about section!`)
+  } 
 });
