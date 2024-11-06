@@ -59,7 +59,7 @@ const updateTime = setInterval(function () {
 
 /*** Vegetable Carousel ***/
 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     autoplay: true,
     smartSpeed: 1500,
@@ -96,14 +96,29 @@ $(document).ready(function(){
 /*** Script Waypoints ***/
 
 const topPage = new Waypoint({
-  element: document.getElementById('top-page'),
-  handler: function() {
-    console.log(`Scrolled to top page!`)
-  }
+  element: document.getElementById("top-page"),
+  handler: function () {
+    console.log(`Scrolled to top page!`);
+  },
 });
 const aboutSection = new Waypoint({
-  element: document.getElementById('about'),
-  handler: function() {
-    console.log(`Scrolled to about section!`)
-  } 
+  element: document.getElementById("about"),
+  handler: function () {
+    console.log(`Scrolled to about section!`);
+  },
+});
+
+$(".quantity button").on("click", function () {
+  var button = $(this);
+  var oldValue = button.parent().parent().find("input").val();
+  if (button.hasClass("btn-plus")) {
+    var newVal = parseFloat(oldValue) + 1;
+  } else {
+    if (oldValue > 0) {
+      var newVal = parseFloat(oldValue) - 1;
+    } else {
+      newVal = 0;
+    }
+  }
+  button.parent().parent().find("input").val(newVal);
 });
