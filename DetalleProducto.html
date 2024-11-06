@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/img/campo-store-icon-light.svg"
+      type="image/x-icon" />
+    <!--Bootstrap Styles-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <!--Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!--Google Fonts: Sintony and Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Sintony:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Detalle Producto- Campo Store</title>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="top-bar z-0">
+        <div class="container">
+          <div class="row py-1">
+            <div class="col-6 col-md-3">
+              <ul class="nav">
+                <li class="nav-item px-2 ps-0">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="d-none d-md-flex col-md-6 justify-content-center align-items-center">
+              <p class="m-0 text-uppercase">El campo siempre a tu alcance</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="nav justify-content-end">
+                <li class="nav-item px-2">
+                  <a
+                    class="nav-link p-0 text-white"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Notificaciones">
+                    <!-- Button trigger notificattions modal -->
+                    <i
+                      class="bi bi-bell"
+                      data-bs-toggle="modal"
+                      data-bs-target="#notificationsModal"></i>
+                    <!-- Notifications modal -->
+                    <div
+                      class="modal fade"
+                      id="notificationsModal"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="notificationsModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div>
+                              <h2
+                                class="modal-title fs-5"
+                                id="notificationsModalLabe">
+                                Próximamente <span class="d-block"></span>
+                              </h2>
+                              <p class="modal-subtitle m-0 text-uppercase">
+                                El campo estará a tu alcance
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <h3 class="fs-6 text-center">
+                              Nuestro lanzamiento será en
+                            </h3>
+                            <div
+                              class="conuntdown-wrapper d-flex flex-wrap justify-content-around justify-content-xl-center gap-3 gap-xl-5 mb-3">
+                              <p class="countdown weeks m-0 text-center">
+                                <span class="countdown-number d-block">00</span>
+                                <span
+                                  class="countdown-title d-block text-uppercase"
+                                  >Semanas</span
+                                >
+                              </p>
+                              <p class="countdown days m-0 text-center">
+                                <span class="countdown-number d-block">00</span>
+                                <span
+                                  class="countdown-title d-block text-uppercase"
+                                  >Días</span
+                                >
+                              </p>
+                              <p class="countdown hours m-0 text-center">
+                                <span class="countdown-number d-block">00</span>
+                                <span
+                                  class="countdown-title d-block text-uppercase"
+                                  >Horas</span
+                                >
+                              </p>
+                              <p class="countdown minutes m-0 text-center">
+                                <span class="countdown-number d-block">00</span>
+                                <span
+                                  class="countdown-title d-block text-uppercase"
+                                  >Minutos</span
+                                >
+                              </p>
+                              <p class="countdown seconds m-0 text-center">
+                                <span class="countdown-number d-block">00</span>
+                                <span
+                                  class="countdown-title d-block text-uppercase"
+                                  >Segundos</span
+                                >
+                              </p>
+                            </div>
+                            <p class="text-center">
+                              Déjanos tu correo electrónico para mantenerte
+                              informado
+                            </p>
+                            <form
+                              action="#"
+                              method="post"
+                              class="form-newsletter d-flex flex-column flex-lg-row gap-3 justify-content-lg-center">
+                              <div>
+                                <label for="inputEmail" class="d-none"
+                                  >Correo electrónico</label
+                                >
+                                <input
+                                  type="email"
+                                  name="email"
+                                  id="inputEmail"
+                                  class="form-control w-100"
+                                  placeholder="Correo electrónico" />
+                              </div>
+                              <div>
+                                <button
+                                  type="submit"
+                                  class="btn text-uppercase w-100">
+                                  Enviar
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-sm"
+                              data-bs-dismiss="modal">
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item px-2 pe-0">
+                  <a
+                    href="#"
+                    class="nav-link p-0 text-white"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Iniciar sesión">
+                    <i class="bi bi-person"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="navFixed" class="nav-wrapper transition-03s-on">
+        <div class="container">
+          <div class="row py-2 py-md-3 transition-03s-on">
+            <div class="col col-md-4 d-flex flex-row">
+              <h1 class="logo-wrapper m-0 d-flex flex-row align-items-center">
+                <a href="#" class="logo d-flex">
+                  <img
+                    src="/img/campo-store-logo-color.svg"
+                    alt="Campo Store"
+                    width="200"
+                    height="45"
+                    class="transition-03s-on" />
+                </a>
+              </h1>
+              <button
+                type="button"
+                class="btn ms-auto p-0 d-md-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobile-menu"
+                aria-controls="mobile-menu">
+                <i class="bi bi-list text-white fs-1"></i>
+              </button>
+              <div
+                id="mobile-menu"
+                class="offcanvas offcanvas-end mobile-menu"
+                data-bs-backdrop="static"
+                tabindex="-1"
+                aria-labelledby="logoMobileMenu">
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="container pt-5">
+                  <div class="row flex-column align-items-center">
+                    <h1
+                      id="logoMobileMenu"
+                      class="logo-wrapper m-0 mb-4 text-center">
+                      <a href="#" class="logo d-block">
+                        <img
+                          src="/img/campo-store-logo-color.svg"
+                          alt="Campo Store"
+                          width="200"
+                          height="45"
+                          class="w-75 transition-03s-on" />
+                      </a>
+                    </h1>
+                    <nav class="mabile-nav mb-4">
+                      <ul class="nav flex-column text-center text-uppercase">
+                        <li class="nav-item">
+                          <a
+                            href="/index.html"
+                            class="nav-link text-white active"
+                            aria-current="page"
+                            >Inicio</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#footer"
+                            >Contacto</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <button
+                      type="button"
+                      class="btn btn-light w-50 text-uppercase mb-4">
+                      Login<i class="bi bi-person"></i>
+                    </button>
+                    <ul class="nav justify-content-center p-0">
+                      <li class="nav-item">
+                        <a
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                          class="nav-link text-white">
+                          <i class="bi bi-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                          class="nav-link text-white">
+                          <i class="bi bi-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="https://www.youtube.com/"
+                          target="_blank"
+                          class="nav-link text-white">
+                          <i class="bi bi-youtube"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 d-none d-md-block">
+              <nav class="nav-desktop">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a
+                      href="/index.html"
+                      class="nav-link text-white"
+                      aria-current="page"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#nosotros">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" href="#">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white pe-0" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <!-- Modal Search Start -->
+      <div
+        class="modal fade"
+        id="searchModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content rounded-0">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Search by keyword
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+              <div class="input-group w-75 mx-auto d-flex">
+                <input
+                  type="search"
+                  class="form-control p-3"
+                  placeholder="keywords"
+                  aria-describedby="search-icon-1" />
+                <span id="search-icon-1" class="input-group-text p-3"
+                  ><i class="fa fa-search"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Search End -->
+
+      <!-- Single Page Header start -->
+      <div class="container-fluid page-header py-5">
+        <h1 class="text-center text-white display-6">Detalle de producto</h1>
+      </div>
+      <!-- Single Page Header End -->
+
+      <!-- Single Product Start -->
+      <div class="container-fluid py- mt-5">
+        <div class="container py-2">
+          <div class="row g-4 mb-5">
+            <div class="col-lg-8 col-xl-9">
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="border rounded">
+                    <a href="#">
+                      <img
+                        src="img/broccoli-166949_640.jpg"
+                        class="img-fluid rounded"
+                        alt="Image" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h4 class="fw-bold mb-3">Brocoli</h4>
+                  <p class="mb-3">Categoria: Vegetales</p>
+                  <h5 class="fw-bold mb-3">5.500$</h5>
+                  <div class="d-flex mb-4">
+                    <i class="fa fa-star text-secondary"></i>
+                    <i class="fa fa-star text-secondary"></i>
+                    <i class="fa fa-star text-secondary"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p class="mb-4">
+                    Nuestro brócoli, cultivado en los campos colombianos, es
+                    fresco, crujiente y lleno de sabor. Cada pieza es
+                    seleccionada a mano para garantizarte un producto de la
+                    mejor calidad, ideal para añadir a tus platos favoritos,
+                    desde ensaladas hasta guisos.
+                  </p>
+                  <p class="mb-4">
+                    Disponible por kilo o en porciones especiales, para que
+                    disfrutes de brócoli fresco siempre que lo necesites. ¡Apoya
+                    a los campesinos de Colombia y disfruta de la frescura del
+                    campo en cada bocado con Campo Store!
+                  </p>
+                  <div class="input-group quantity mb-5" style="width: 100px">
+                    <div class="input-group-btn">
+                      <button
+                        class="btn btn-sm btn-minus rounded-circle bg-light border">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control form-control-sm text-center border-0"
+                      value="1" />
+                    <div class="input-group-btn">
+                      <button
+                        class="btn btn-sm btn-plus rounded-circle bg-light border">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"
+                    ><i class="fa fa-shopping-bag me-2 text-primary"></i
+                    >Comprar</a
+                  >
+                </div>
+                <div class="col-lg-12">
+                  <nav>
+                    <div class="nav nav-tabs mb-3">
+                      <button
+                        class="nav-link active border-white border-bottom-0"
+                        type="button"
+                        role="tab"
+                        id="nav-about-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-about"
+                        aria-controls="nav-about"
+                        aria-selected="true">
+                        Descripcion
+                      </button>
+                      <button
+                        class="nav-link border-white border-bottom-0"
+                        type="button"
+                        role="tab"
+                        id="nav-mission-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-mission"
+                        aria-controls="nav-mission"
+                        aria-selected="false">
+                        Reseñas
+                      </button>
+                    </div>
+                  </nav>
+                  <div class="tab-content mb-5">
+                    <div
+                      class="tab-pane active"
+                      id="nav-about"
+                      role="tabpanel"
+                      aria-labelledby="nav-about-tab">
+                      <p>
+                        Brócolis frescos y de calidad, ricos en vitaminas C y K,
+                        fibra y antioxidantes, ideales para preparar platos
+                        saludables. Cultivados en Colombia y seleccionados
+                        cuidadosamente, apoyando a los pequeños agricultores
+                        locales.
+                      </p>
+
+                      <div class="px-2">
+                        <div class="row g-4">
+                          <div class="col-6">
+                            <div
+                              class="row bg-black align-items-center text-center justify-content-center py-2">
+                              <div class="col-6">
+                                <p class="mb-0">Peso</p>
+                              </div>
+                              <div class="col-6">
+                                <p class="mb-0">1.13 kg</p>
+                              </div>
+                            </div>
+                            <div
+                              class="row text-center align-items-center justify-content-center py-2">
+                              <div class="col-6">
+                                <p class="mb-0">Ciudad</p>
+                              </div>
+                              <div class="col-6">
+                                <p class="mb-0">Tunja Boyaca</p>
+                              </div>
+                            </div>
+                            <div
+                              class="row bg-black text-center align-items-center justify-content-center py-2">
+                              <div class="col-6">
+                                <p class="mb-0">Calidad</p>
+                              </div>
+                              <div class="col-6">
+                                <p class="mb-0">Organico</p>
+                              </div>
+                            </div>
+                            <div
+                              class="row text-center align-items-center justify-content-center py-2">
+                              <div class="col-6">
+                                <p class="mb-0">Comprobar</p>
+                              </div>
+                              <div class="col-6">
+                                <p class="mb-0">100% Saludable</p>
+                              </div>
+                            </div>
+                            <div
+                              class="row bg-black text-center align-items-center justify-content-center py-2">
+                              <div class="col-6">
+                                <p class="mb-0">Peso minimo</p>
+                              </div>
+                              <div class="col-6">
+                                <p class="mb-0">150 Lb</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" id="nav-vision" role="tabpanel">
+                      <p class="text-dark">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        et tempor sit. Aliqu diam amet diam et eos labore. 3
+                      </p>
+                      <p class="mb-0">
+                        Diam dolor diam ipsum et tempor sit. Aliqu diam amet
+                        diam et eos labore. Clita erat ipsum et lorem et sit
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <form action="#">
+                  <h4 class="mb-5 fw-bold">Dejar un comentario</h4>
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <div class="border-bottom rounded">
+                        <input
+                          type="text"
+                          class="form-control border-0 me-4"
+                          placeholder="Nombre" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="border-bottom rounded">
+                        <input
+                          type="email"
+                          class="form-control border-0"
+                          placeholder="Correo" />
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="border-bottom rounded my-4">
+                        <textarea
+                          name=""
+                          id=""
+                          class="form-control border-0"
+                          cols="30"
+                          rows="8"
+                          placeholder="Comentario"
+                          spellcheck="false"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="d-flex justify-content-between py-3 mb-5">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 me-3">Por favor califica:</p>
+                          <div
+                            class="d-flex align-items-center"
+                            style="font-size: 12px">
+                            <i class="fa fa-star text-muted"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <a
+                          href="#"
+                          class="btn border border-secondary text-primary rounded-pill px-4 py-3">
+                          Enviar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-3">
+              <div class="row g-4 fruite">
+                <div class="col-lg-12">
+                  <div class="input-group w-100 mx-auto d-flex mb-4">
+                    <input
+                      type="search"
+                      class="form-control p-3"
+                      placeholder="keywords"
+                      aria-describedby="search-icon-1" />
+                    <span id="search-icon-1" class="input-group-text p-3"
+                      ><i class="fa fa-search"></i
+                    ></span>
+                  </div>
+                  <div class="mb-4">
+                    <h4>Categorias</h4>
+                    <ul class="list-unstyled fruite-categorie">
+                      <li>
+                        <div class="d-flex justify-content-between fruite-name">
+                          <a href="#"
+                            ><i class="fas fa-apple-alt me-2"></i>Frutas</a
+                          >
+                          <span>(4)</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between fruite-name">
+                          <a href="#"
+                            ><i class="fas fa-regular fa-seedling me-2"></i
+                            >Vegetales</a
+                          >
+                          <span>(4)</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between fruite-name">
+                          <a href="#"
+                            ><i class="fas fa-apple-alt me-2"></i>Granos</a
+                          >
+                          <span>(3)</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between fruite-name">
+                          <a href="#"
+                            ><i class="fas fa-solid fa-fill-drip me-2"></i
+                            >Fertilizantes</a
+                          >
+                          <span>(5)</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between fruite-name">
+                          <a href="#"
+                            ><i class="fas fa-solid fa-wrench me-2"></i
+                            >Herramientas</a
+                          >
+                          <span>(7)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <h4 class="mb-4">Productos destacados</h4>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div class="rounded" style="width: 100px; height: 100px">
+                      <img
+                        src="img/melones.jpg"
+                        class="img-fluid rounded"
+                        alt="Image" />
+                    </div>
+                    <div>
+                      <h6 class="mb-2">Melones</h6>
+                      <div class="d-flex mb-2">
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="d-flex mb-2">
+                        <h5 class="fw-bold me-2">7.300 $</h5>
+                        <h5 class="text-danger text-decoration-line-through">
+                          10.800$
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div class="rounded" style="width: 100px; height: 100px">
+                      <img
+                        src="img/colifror.jpg"
+                        class="img-fluid rounded"
+                        alt="" />
+                    </div>
+                    <div>
+                      <h6 class="mb-2">Coliflor</h6>
+                      <div class="d-flex mb-2">
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="d-flex mb-2">
+                        <h5 class="fw-bold me-2">2.200 $</h5>
+                        <h5 class="text-danger text-decoration-line-through">
+                          4.600 $
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div class="rounded" style="width: 100px; height: 100px">
+                      <img
+                        src="img/arroz.jpg"
+                        class="img-fluid rounded"
+                        alt="" />
+                    </div>
+                    <div>
+                      <h6 class="mb-2">Arroz</h6>
+                      <div class="d-flex mb-2">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="d-flex mb-2">
+                        <h5 class="fw-bold me-2">4.320 $</h5>
+                        <h5 class="text-danger text-decoration-line-through">
+                          7.340$
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div
+                      class="rounded me-4"
+                      style="width: 100px; height: 100px">
+                      <img
+                        src="img/uvas.jpg"
+                        class="img-fluid rounded"
+                        alt="" />
+                    </div>
+                    <div>
+                      <h6 class="mb-2">Uvas</h6>
+                      <div class="d-flex mb-2">
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="d-flex mb-2">
+                        <h5 class="fw-bold me-2">4.330$</h5>
+                        <h5 class="text-danger text-decoration-line-through">
+                          9.500 $
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div
+                      class="rounded me-4"
+                      style="width: 100px; height: 100px">
+                      <img
+                        src="img/naranjas.jpg"
+                        class="img-fluid rounded"
+                        alt="" />
+                    </div>
+                    <div>
+                      <h6 class="mb-2">Naranjas</h6>
+                      <div class="d-flex mb-2">
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="d-flex mb-2">
+                        <h5 class="fw-bold me-2">3.200$</h5>
+                        <h5 class="text-danger text-decoration-line-through">
+                          6.430$
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <div
+                      class="rounded me-4"
+                      style="width: 100px; height: 100px">
+                      <img
+                        src="img/pepinos.jpg"
+                        class="img-fluid rounded"
+                        alt="" />
+                    </div>
+                    <div>
+                      <h6 class="mb-2">Pepinos</h6>
+                      <div class="d-flex mb-2">
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star text-secondary"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="d-flex mb-2">
+                        <h5 class="fw-bold me-2">7.600$</h5>
+                        <h5 class="text-danger text-decoration-line-through">
+                          9.000 $
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center my-4">
+                    <a
+                      href="#"
+                      class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100"
+                      >Ver mas</a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="position-relative">
+                    <img
+                      src="img/file.png"
+                      class="img-fluid w-100 rounded"
+                      alt="" />
+                    <div
+                      class="position-absolute"
+                      style="
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                      "></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Single Product End -->
+    </section>
+    <footer class="footer-wrapper" id="footer">
+      <div class="brand">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-sm-6">
+              <a href="#" class="logo d-block">
+                <img
+                  src="/img/campo-store-logo-color.svg"
+                  alt="Campo Store"
+                  width="200"
+                  height="45" />
+              </a>
+            </div>
+            <div
+              class="d-none d-sm-flex col-sm-6 justify-content-end align-items-center">
+              <ul class="nav">
+                <li class="nav-item px-2 ps-0">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    class="nav-link p-0 text-white">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-and-links">
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <h5 class="footer-heading">Nosotros</h5>
+              <p class="py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                imperdiet pulvinar justo vel finibus. Donec vehicula ultrices
+                consectetur.
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <h5 class="footer-heading">Tienda</h5>
+              <ul class="nav flex-column mb-3">
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white"
+                    >Lo más vendido</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white"
+                    >Lo mejor calificado</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white">Lo nuevo</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white">Lo de moda</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+              <h5 class="footer-heading">Compañía</h5>
+              <ul class="nav flex-column mb-3">
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-0 text-white">Login</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-5">
+              <h5 class="footer-heading">Escríbenos</h5>
+              <form action="" class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <label
+                    for="inputNameFooter"
+                    class="form-label visually-hidden"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="inputNameFooter"
+                    class="form-control"
+                    placeholder="Nombre" />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <label
+                    for="inputEmailFooter"
+                    class="form-label visually-hidden"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="inputEmailFooter"
+                    class="form-control"
+                    placeholder="Correo electrónico" />
+                </div>
+                <div class="col-12">
+                  <label
+                    for="extareaMessageForm"
+                    class="form-label visually-hidden"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    name="message"
+                    id="textareaMessageForm"
+                    class="form-control"
+                    placeholder="Mensaje"
+                    rows="4"></textarea>
+                </div>
+                <div class="col-12 col-sm-7 col-lg-9">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      name="acceptance"
+                      id="inputAcceptanceFooter"
+                      class="form-check-input" />
+                    <label for="nputAcceptanceFooter" class="form-check-label"
+                      >Acepto la política de tratamiento de datos</label
+                    >
+                  </div>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 text-sm-end">
+                  <button type="submit" class="btn btn-secondary">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-and-legal">
+        <div class="container">
+          <div class="row py-2">
+            <div class="col-12 col-md-6">
+              <p class="text-center text-md-start m-0">
+                &copy; Campo Store 2024. Todos los derechos reservados
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <ul class="nav justify-content-center justify-content-md-end">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-0 text-white"
+                    >Política de datos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-0 pe-md-0 text-white"
+                    >Cookies</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.11"></script>
+    <!--Bootstrap Script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
